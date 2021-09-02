@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+message Platform {
+  int32 id = 1;
+  string name = 2;
+}
+
+message PlatformFindRequest {
+  int32 id = 1;
+}
+
+message PlatformFindResponse {
+  Platform platform = 1;
+}
+
+message PlatformListResponse {
+  repeated Platform platforms = 1;
+}

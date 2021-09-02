@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+import  "./platform.proto";
+
+message Game {
+  int32 id = 1;
+  string name = 2;
+  Platform platform = 3;
+}
+
+message GameFindRequest {
+  int32 id = 1;
+}
+
+message GameFindResponse {
+  Game game = 1;
+}
+
+message GameListResponse {
+  repeated Game games = 1;
+}
+

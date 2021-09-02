@@ -1,0 +1,25 @@
+{
+  "name": "grpc-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "node server.js",
+    "client": "node client.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasbagatini/node-grpc-example.git"
+  },
+  "author": "Lucas Bagatini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasbagatini/node-grpc-example/issues"
+  },
+  "homepage": "https://github.com/lucasbagatini/node-grpc-example#readme",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.3.7",
+    "@grpc/proto-loader": "^0.6.4"
+  }
+}

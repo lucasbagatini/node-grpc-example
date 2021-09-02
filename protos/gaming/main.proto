@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import  "./platform.proto";
+import  "./game.proto";
+
+message Void {}
+
+service GameService {
+  rpc List (Void) returns (GameListResponse);
+  rpc Find (GameFindRequest) returns (GameFindResponse);
+}
+
+service PlatformService {
+  rpc List (Void) returns (PlatformListResponse);
+  rpc Find (PlatformFindRequest) returns (PlatformFindResponse);
+}
